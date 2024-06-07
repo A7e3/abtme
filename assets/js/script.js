@@ -43,7 +43,7 @@ function startIntroTyping() {
 function typerStartTyping(typer) {
   typer.reset();
 
-  let text = ['Java Developer...', "JavaScript Developer...", 'C# Developer...', "Computer Science Student...", 'Kid dreaming big with bipolar disorder...'];
+  let text = ['Java Developer...', "JavaScript Developer...", 'C# Developer...', "Computer Science Student..."];
 
   text.forEach(function (language, index) {
     typer.move(null);
