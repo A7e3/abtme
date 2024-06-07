@@ -34,9 +34,11 @@ color: red;
 
 .pfp {
   position: fixed;
-  top: 2%;
-  left: 43.5%;
-
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  
   width: 256px;
   height: 256px;
   box-shadow: 0 0 30px white; 
@@ -47,14 +49,14 @@ color: red;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  z-index: 0;
+  
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   
   backdrop-filter: blur(10px);
 
   width: 90%;
-
   height: 30%;
   max-width: 580px;
   
