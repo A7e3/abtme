@@ -10,7 +10,7 @@ function openSocial(type) {
       url = 'https://discordapp.com/users/411436556792889356';
       break;
     case 'github':
-      url = 'https://github.com/Nerpx';
+      url = 'https://github.com/A7e3';
       break;
     case 'twitter':
       url = 'https://twitter.com/GitCLIMC';
