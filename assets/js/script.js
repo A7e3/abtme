@@ -10,11 +10,19 @@ function openSocial(type) {
       url = 'https://discordapp.com/users/411436556792889356';
       break;
     case 'github':
-      url = 'https://github.com/SkriptError';
+      url = 'https://github.com/Nerpx';
       break;
     case 'twitter':
-      url = 'https://twitter.com/SkriptError';
+      url = 'https://twitter.com/GitCLIMC';
       break;
+    case 'java':
+      url = 'https://www.java.com/en';
+      break;
+    case 'js':
+      url = 'https://en.wikipedia.org/wiki/JavaScript';
+      break;
+    case 'csharp':
+      url = 'https://dotnet.microsoft.com/en-us/languages/csharp';
   }
 
   window.open(url);
@@ -24,20 +32,18 @@ function startIntroTyping() {
   new TypeIt('#intro-text', {
     speed: 50,
   })
-    .type('Hello! my name is William, I am a AI Created by Daniel S Norstrom or his internet name <b>(SKRIPTERROR)</b>', { delay: 1200 })
-    .delete(null, { delay: 1000 })
-    .type(`${mobile ? 'I William am still in development' : 'I William am still in development'} and is a WIP (Work in Progress) Soon I will have more capablitys to respond to messages and questions you may have but for right now I am just text on a screen until I have a Fully Coded API but to go to skripterrors website click any button.`)
+    .type('Press any key to continue.', { delay: 1200 })
     .go();
 
   setTimeout(function () {
     switchAllowed = true;
-  }, 2500);
+  }, 100);
 }
 
 function typerStartTyping(typer) {
   typer.reset();
 
-  let text = ['Web Developer...', 'Junior Java Developer...', 'I play Minecraft...', 'Owner | Apollo Cheats', 'Founder | OldArcane.cc', 'Say hello to William for me.', 'Shout out to gavin.', 'inflation sucks.', 'gavin wanted me to add somthing here but I didn"t know what.'];
+  let text = ['Java Developer...', "JavaScript Developer...", 'C# Developer...', "Computer Science Student...", 'Kid dreaming big with bipolar disorder...'];
 
   text.forEach(function (language, index) {
     typer.move(null);
@@ -62,7 +68,7 @@ function startMainTyping() {
 }
 
 function switchScreen() {
-  document.title = 'SkriptError | ERROR 404';
+  document.title = 'A7e3 | About Me';
 
   $('.intro').fadeOut(2000, function () {
     $('.bg-image').fadeIn(2000);
@@ -71,7 +77,7 @@ function switchScreen() {
     });
   });
 
-  ['background', 'rain'].forEach(function (audioName) {
+  ['background'].forEach(function (audioName) {
     let fullPath = `assets/audio/${audioName}.mp3`;
 
     let audioElement = document.createElement('audio');
@@ -102,5 +108,7 @@ document.addEventListener('touchstart', function (e) {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+  // switchAllowed = false;
+  // switchScreen();
   startIntroTyping();
 });

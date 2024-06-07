@@ -9,6 +9,7 @@ p,
 .subtext {
   color: #ffffff;
   font-family: 'Encode Sans Expanded', sans-serif;
+  text-shadow: 0 0 10px white;
 }
 
 .bg-image {
@@ -31,6 +32,16 @@ b {
 color: red;
 }
 
+.pfp {
+  position: fixed;
+  top: 2%;
+  left: 43.5%;
+
+  width: 256px;
+  height: 256px;
+  box-shadow: 0 0 30px white; 
+}
+
 .box {
   position: fixed;
   top: 50%;
@@ -44,10 +55,36 @@ color: red;
 
   width: 90%;
 
-  height: 35%;
+  height: 30%;
   max-width: 580px;
   
   border-radius: 5px;
+  box-shadow: 0 0 10px white; 
+}
+
+.langbox {
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  
+  backdrop-filter: blur(10px);
+
+  width: 90%;
+
+  height: 30%;
+  max-width: 150px;
+  box-shadow: 0 0 10px white; 
+  
+  border-radius: 5px;
+  /* center all images inside */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
@@ -109,4 +146,18 @@ color: red;
 
 .social-logo:hover {
   transform: scale(1.5);
+}
+
+.lang-logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  transition: transform 0.2s;
+
+  width: 50px;
+  height: 50px;
+}
+
+.lang-logo:hover {
+  transform: scale(1.3);
 }
